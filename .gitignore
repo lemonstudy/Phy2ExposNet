@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+
+# Download datasets locally; retain only directory placeholders.
+data/RadioMapSeer/*
+!data/RadioMapSeer/.gitkeep
+data/USC/*
+!data/USC/.gitkeep
+
+# Generated experiment artifacts.
+outputs/
+*.pt
+*.pth
+*.ckpt
+# Recovered checkpoints are versioned through Git LFS.
+!checkpoints/**/*.pt
+*.out
+*.err
